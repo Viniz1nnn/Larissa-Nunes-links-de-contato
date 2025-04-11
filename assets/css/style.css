@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  color: #2b1b10;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.formas .forma-1 {
+  border-radius: 0 700px 0 0;
+  bottom: 0;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -100px;
+  background-color: rgba(214, 162, 146, 0.1);
+}
+
+.formas .forma-2 {
+  border-radius: 700px;
+  bottom: 50px;
+  right: -400px;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(214, 162, 146, 0.08);
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/*header*/
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo img {
+  width: 300px;
+}
+
+.header button {
+  background-color: #ffffff;
+  border: 0;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.header button img {
+  width: 24px;
+}
+
+/*section-perfil*/
+
+.perfil .image {
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  background-color: rgb(224, 224, 224);
+  border: 3px solid #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.perfil .image img {
+  border-radius: 100px;
+  width: 170px;
+  height: 170px;
+}
+
+.perfil .name {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+/*section-links*/
+
+.links {
+  margin-bottom: 30px;
+  gap: 25px;
+}
+
+.links h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.links a {
+  height: 40px;
+  display: flex;
+}
+
+.links a button {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2b1b10;
+  padding: 25px 0;
+  font-size: 20px;
+  border-radius: 25px;
+  color: #2b1b10;
+  width: 330px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.links a button:hover {
+  color: #fff;
+  transform: scale(1.05);
+  background-color: #2b1b10;
+}
+
+.links a i {
+  position: absolute;
+  font-size: 30px;
+  left: 20px;
+}
+
+footer .arroba {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+footer .arroba a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #2b1b10;
+}
+
+/*area de responsividade*/
+
+@media (max-height: 770px) {
+  .formas .forma-2 {
+    border-radius: 700px;
+    bottom: 50px;
+    right: -270px;
+    width: 470px;
+    height: 470px;
+  }
+
+  .perfil .image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .perfil .image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .perfil .name {
+    font-size: 40px;
+    margin: 30px 0;
+  }
+}
+
+@media (max-height: 670px) {
+  .header .logo img {
+    width: 250px;
+  }
+
+  .perfil .image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .perfil .image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .perfil .name {
+    font-size: 33px;
+    margin: 20px 0;
+  }
+
+  .links h2 {
+    font-size: 15px;
+  }
+
+  .links a {
+    height: 40px;
+  }
+
+  .links a button {
+    padding: 18px 0;
+    font-size: 17px;
+    border-radius: 18px;
+    width: 300px;
+  }
+
+  .links a i {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .links a button {
+    padding: 24px 0;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 300px;
+  }
+}
+
+@media (min-height: 1050px) {
+  .perfil .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .perfil .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .links a {
+    height: 60px;
+  }
+
+  .links a button {
+    padding: 30px 0;
+    font-size: 25px;
+    border-radius: 25px;
+    width: 370px;
+  }
+}
+
+@media (max-height: 600px) {
+  .formas .forma-2 {
+    right: -470px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .formas .forma-2 {
+    border-radius: 700px;
+    top: 100px;
+    right: -270px;
+    width: 600px;
+    height: 600px;
+  }
+
+  .formas .forma-3 {
+    border-radius: 700px 0 0 0;
+    bottom: 0;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 0;
+    background-color: rgba(214, 162, 146, 0.1);
+  }
+}
