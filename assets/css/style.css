@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+html {
+  overflow: hidden;
 }
 
 body {
