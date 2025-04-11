@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-html {
-  overflow: hidden;
-}
-
 body {
   margin: 0;
   background-color: rgb(255, 255, 255);
@@ -12,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
 }
 
 main {
@@ -24,26 +19,6 @@ main {
   align-items: center;
   flex-direction: column;
   position: relative;
-}
-
-.formas .forma-1 {
-  border-radius: 0 700px 0 0;
-  bottom: 0;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  left: -100px;
-  background-color: rgba(214, 162, 146, 0.1);
-}
-
-.formas .forma-2 {
-  border-radius: 700px;
-  bottom: 50px;
-  right: -400px;
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background-color: rgba(214, 162, 146, 0.08);
 }
 
 a {
@@ -268,28 +243,3 @@ footer .arroba a {
   }
 }
 
-@media (max-height: 600px) {
-  .formas .forma-2 {
-    right: -470px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .formas .forma-2 {
-    border-radius: 700px;
-    top: 100px;
-    right: -270px;
-    width: 600px;
-    height: 600px;
-  }
-
-  .formas .forma-3 {
-    border-radius: 700px 0 0 0;
-    bottom: 0;
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    right: 0;
-    background-color: rgba(214, 162, 146, 0.1);
-  }
-}
