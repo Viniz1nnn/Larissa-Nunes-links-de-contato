@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 body {
   margin: 0;
   background-color: rgb(255, 255, 255);
@@ -120,6 +124,13 @@ section {
   text-transform: uppercase;
 }
 
+.links a button:hover {
+  color: #fff;
+  transform: scale(1.05);
+  background-color: #2b1b10;
+}
+
+.links a button:active,
 .links a button:hover {
   color: #fff;
   transform: scale(1.05);
