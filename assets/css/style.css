@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
   margin: 0;
@@ -23,6 +23,7 @@ main {
 
 a {
   text-decoration: none;
+  background-color: transparent;
 }
 
 section {
@@ -76,8 +77,8 @@ section {
 }
 
 .perfil .name {
-  font-family: "Lavishly Yours", cursive;
-  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 33px;
   margin: 50px 0;
 }
 
@@ -114,7 +115,7 @@ section {
   color: #2b1b10;
   width: 330px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
   font-family: "DM Sans", sans-serif;
   text-transform: uppercase;
 }
@@ -131,11 +132,14 @@ section {
   left: 20px;
 }
 
+footer {
+  height: 60px;
+}
+
 footer .arroba {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 60px;
 }
 
 footer .arroba a {
@@ -166,7 +170,7 @@ footer .arroba a {
   }
 
   .perfil .name {
-    font-size: 40px;
+    font-size: 30px;
     margin: 30px 0;
   }
 }
@@ -187,7 +191,7 @@ footer .arroba a {
   }
 
   .perfil .name {
-    font-size: 33px;
+    font-size: 27px;
     margin: 20px 0;
   }
 
@@ -242,4 +246,3 @@ footer .arroba a {
     width: 370px;
   }
 }
-
